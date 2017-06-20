@@ -1,4 +1,4 @@
-import { Meteor } from 'meteor/meteor';
+//import { Meteor } from 'meteor/meteor';
 
 Meteor.startup(() => {
   // code to run on server at startup
@@ -6,7 +6,7 @@ Meteor.startup(() => {
   People.insert({name:'Nina',location:"Waltham"});
   People.insert({name:'Tim',location:"Boston"});
 });
-// 
+//
 // Meteor.startup(function(){
 // 	if (Pokedex.find().count()==0){
 // 		console.log("Importing Pokedex to db")
