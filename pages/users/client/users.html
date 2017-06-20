@@ -3,6 +3,7 @@
   {{> addperson}}
   <hr>
   {{> showpeople}}
+  {{> personrow}}
 </template>
 
 <template name="addperson">
@@ -11,6 +12,18 @@
   <button id="addperson" class="btn btn-primary">
     Add to Collection
   </button>
+</template>
+
+<template name="showpeople">
+  {{#if currentUser}}
+  <ul>
+  {{#each p in peoplelist}}
+    <li>{{> personrow person=p}}</li>
+  {{/each}}
+  </ul>
+  {{else}}
+  <h1>You must log in to see the info!!</h1>
+  {{/if}}
 </template>
 
 <template name = "signuptext">
@@ -52,18 +65,6 @@
   </div>
   </form>
 </div>
-</template>
-
-<template name="showpeople">
-  {{#if currentUser}}
-  <ul>
-  {{#each p in peoplelist}}
-    <li>{{> personrow person=p}}</li>
-  {{/each}}
-  </ul>
-  {{else}}
-  <h1>You must log in to see the info!!</h1>
-  {{/if}}
 </template>
 
 <template name="personrow">
