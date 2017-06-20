@@ -1,0 +1,72 @@
+<template name="users">
+  <h1>Sign In</h1>
+  {{> addperson}}
+  <hr>
+  {{> showpeople}}
+</template>
+
+<template name="addperson">
+  Name:<input type="text" id="name"><br>
+  Location:<input type="text" id="location"><br>
+  <button id="addperson" class="btn btn-primary">
+    Add to Collection
+  </button>
+</template>
+
+<template name = "signuptext">
+  <div class = "col-md-10 col-md-offset-2">
+  <form>
+  E-mail:
+  <input type="text" name="e-mail"><br>
+  Password:
+  <input type="password" name="password"><br>
+  <div class = "col-md-10 col-md-offset-3">
+      <button type="button" class="btn btn-primary">Sign In</button>
+  </div>
+  </form>
+</div>
+
+<div class = "col-md-10 col-md-offset-2">
+  <h1>Sign Up</h1>
+  <form>
+  First name:
+  <input type="text" name="firstname"><br>
+  Last name:
+  <input type="text" name="lastname"><br>
+  Gender:
+  <input type="radio" name="gender" value="male"> male
+  <input type="radio" name="gender" value="female"> female <br>
+  Birthday:
+  <input type="date" name="bday"><br>
+  Email:
+  <input type="text" name="e-mail"><br>
+  Create a Password:
+  <input type="text" name="password"><br>
+  Re-enter the Password:
+  <input type="text" name="password"><br>
+  Let us know about you! Choose your favorite color:
+  <label for="colorWell">Color:</label>
+  <input type="color" value="#ff0000" id="colorWell"> <br>
+  <div class = "col-md-10 col-md-offset-4">
+      <button type="button" class="btn btn-primary">Submit</button>
+  </div>
+  </form>
+</div>
+</template>
+
+<template name="showpeople">
+  {{#if currentUser}}
+  <ul>
+  {{#each p in peoplelist}}
+    <li>{{> personrow person=p}}</li>
+  {{/each}}
+  </ul>
+  {{else}}
+  <h1>You must log in to see the info!!</h1>
+  {{/if}}
+</template>
+
+<template name="personrow">
+  {{person.name}}--{{person.location}}
+  <button class="btn btn-danger btn-sm"> Delete</button>
+</template>
