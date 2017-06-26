@@ -1,9 +1,11 @@
 <template name="users">
   <h1>Sign In</h1>
   {{> addperson}}
+  {{> loginButtons}}
   <hr>
   {{> showpeople}}
   {{> personrow}}
+  {{> signuptext}}
 </template>
 
 <template name="addperson">
@@ -27,7 +29,6 @@
 </template>
 
 <template name = "signuptext">
-  <div class = "col-md-10 col-md-offset-2">
   <form>
   E-mail:
   <input type="text" name="e-mail"><br>
@@ -37,9 +38,8 @@
       <button type="button" class="btn btn-primary">Sign In</button>
   </div>
   </form>
-</div>
 
-<div class = "col-md-10 col-md-offset-2">
+
   <h1>Sign Up</h1>
   <form>
   First name:
@@ -64,7 +64,6 @@
       <button type="button" class="btn btn-primary">Submit</button>
   </div>
   </form>
-</div>
 </template>
 
 <template name="personrow">
