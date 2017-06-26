@@ -17,6 +17,16 @@ Template.addperson.events({
     //People.insert({name,birthyear})
   }
 })
+
+Template.updatelocation.events({
+  'click button'(elt,instance) {
+    People.update(this.person_id,{
+      $set:{name:name,location:location}
+    });
+    alert ("Successfully updated your location");
+  }
+})
+
 Template.personrow.events({
   'click button'(elt,instance) {
     console.dir(this);
@@ -26,6 +36,5 @@ Template.personrow.events({
     } else {
       alert("Why are you deleting someone else's entry?");
     }
-    People.remove(this.person._id);
   }
 })
