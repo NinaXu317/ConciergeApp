@@ -13,8 +13,12 @@ Template.addperson.events({
     console.log('adding '+name);
     instance.$('#name').val("");
     instance.$('#location').val("");
-    People.insert({name:name,location:location});
-    //People.insert({name,birthyear})
+    var info =
+      { name:name,
+        location:location
+      };
+    Meteor.call ('info.insert',info);
+    //People.insert({name:name,location:location})
   }
 })
 
@@ -31,11 +35,6 @@ Template.personrow.events({
   'click button'(elt,instance) {
     console.dir(this);
     console.log(this.person_id);
-    if (this.person.owner==Meteor.userId()) {
-      People.remove(this.person._id);
-    } else {
-      alert("Why are you deleting someone else's entry?");
-    }
-    People.remove(this.person._id);
+    Meteor.call('info.remove',this.person_id);
   }
 })
