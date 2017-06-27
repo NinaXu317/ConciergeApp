@@ -1,4 +1,4 @@
-const contactinfo =
+const contact =
   [
     {information: "c1xu@brandeis.edu"},
     {information: "xcl317@163.com"},
@@ -7,5 +7,6 @@ const contactinfo =
 
 Template.contact.helpers(
  {
-   information:contactinfo,
+   contact
  }
+)
