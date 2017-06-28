@@ -1,0 +1,12 @@
+table, th, td
+  {
+  border-collapse:collapse;
+  border: solid rgb(56,0,0);;
+  color:black;
+  }
+h2{
+  font-size:2em;
+}
+p {
+  color:rgb(56,0,0);
+}

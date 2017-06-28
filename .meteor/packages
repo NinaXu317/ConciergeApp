@@ -4,12 +4,10 @@
 # 'meteor add' and 'meteor remove' will edit this file for you,
 # but you can also edit it by hand.
 
-twbs:bootstrap
 iron:router
 sacha:spin
 accounts-password
 jparker:gravatar
-ian:accounts-ui-bootstrap-3
 meteor-base@1.1.0
 mobile-experience@1.0.4
 mongo@1.1.18
@@ -32,3 +30,4 @@ autopublish
 shell-server@0.2.3
 google-config-ui@1.0.0
 dynamic-import
+accounts-ui

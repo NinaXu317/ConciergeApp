@@ -1,0 +1,87 @@
+body {
+  margin:0.5in;
+  font-size:100%;
+  background-image:url(http://admin.e-travelclub.hu/uploads/0b3cf147e9cf96820cd33b9cb51dbe35contact.jpg);
+  background-repeat:no-repeat;
+  background-position:center;
+  background-color:#C0C0C0;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+
+img#title {
+  width: 15cm;
+  height: 3cm;
+  margin: 0 auto;
+}
+.img-circle {
+    border-radius: 50%;
+}
+
+/*.typo, .typo div{
+  margin: 0 auto;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+
+.typo {
+  transform: rotate(120deg);
+}
+.dode1 {
+  transform: rotate(-60deg);
+}
+.dode2 {
+  transform: rotate(-60deg);
+}*/
+
+h1 {
+  font-size:5em;
+  font:San-serif;
+  color:white;
+}
+
+h2 {
+  color:black;
+  text-transform:uppercase;
+}
+
+p {
+  font-size:1.5em;
+}
+
+p#byline {
+  margin-top:0px;
+  padding-top:0px;
+  margin-left:20%;
+}
+
+.head  {
+  padding:0.2cm;
+  margin:0 in;
+  border: solid gray;
+}
+
+img#button {
+  opacity:0.8;
+  filter:alpha(opacity=80);
+  margin:0 inch;
+
+}
+
+input#Location {
+  width: 4cm;
+}
+
+input,select {
+  opacity:0.8;
+  filter:alpha(opacity=80);
+  border-radius: 4px;
+}
+
+p{
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  color:#F8F8F8;
+}

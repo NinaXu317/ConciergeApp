@@ -1,18 +1,25 @@
 <template name="home">
 
 
-	<div class="jumbotron">
-  	<h1> Concierge</h1>
-		<p> What's fun around you?</p>
+	<div class="head">
+		<div class="typo">
+			<!-- <div class="dode1">
+        <div class="dode2"> -->
+			<img src = "images/ConciergeTypo.jpg" id="title">
+		<!-- </div>
+	</div> -->
+</div>
+  	<!-- <h1> Concierge</h1> -->
+		<p id="byline"> --What's fun around you?</p>
 	</div>
 
-	<div class="row">
+	<!-- <div class="row">
 		<div class = "col-md-10 col-md-offset-3">
 			<img src="images/concierge.png" class="img-circle" width="500"></div>
-	</div>
+	</div> -->
 	<div class="row">
 		<h2> Enter Your Location</h2>
-		<input type="text">
+		<input type="text" id="Location">
 		<form>
 			<h2> Choose a distance </h2>
 			<select name="select" >
@@ -32,10 +39,10 @@
 		<input type="checkbox" id="Private Events" value="Private Events"><label for="Private Events"> Private Events</label>
 		<input type="checkbox" id="Other Activities" value="Other Activities"><label for="Other Activities"> Other Activities</label>
 	</div>
+		<h2>Browse all recent activities...</h2>
 
-	<div class="row">
-		<div class="col-md-5 col-md-offset-8">
-			<a href="http://localhost:3000/activities"><img src ="http://www.secure-dock.com/wp-content/uploads/2016/07/Concierge-Symbol.jpg" width="100"></a></div>
+	<div class="photo">
+			<a href="http://localhost:3000/activities"><img src ="http://www.secure-dock.com/wp-content/uploads/2016/07/Concierge-Symbol.jpg" id="button" width="100"></a>
 	</div>
 
 </template>

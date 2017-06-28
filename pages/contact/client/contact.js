@@ -5,8 +5,8 @@ const contact =
     {information: "7815300089"},
   ];
 
-Template.contact.helpers(
+Template.contactinfo.helpers(
  {
-   contact
+   contact:information,
  }
 )

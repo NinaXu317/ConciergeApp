@@ -24,9 +24,9 @@ Template.addperson.events({
 
 Template.updatelocation.events({
   'click button'(elt,instance) {
-    People.update(this.person_id,{
+    People.update(
       $set:{name:name,location:location}
-    });
+    );
     alert ("Successfully updated your location");
   }
 })
@@ -35,6 +35,6 @@ Template.personrow.events({
   'click button'(elt,instance) {
     console.dir(this);
     console.log(this.person_id);
-    Meteor.call('info.remove',this.person_id);
+    Meteor.call('info.remove',this.person._id);
   }
 })
