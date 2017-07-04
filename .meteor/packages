@@ -26,9 +26,7 @@ standard-minifier-js@2.1.0
 accounts-google
 underscore@1.0.10
 reactive-dict@1.1.9
-autopublish
 shell-server@0.2.3
 google-config-ui@1.0.0
 dynamic-import
 accounts-ui
-twbs:bootstrap

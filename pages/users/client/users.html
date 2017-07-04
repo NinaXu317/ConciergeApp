@@ -23,15 +23,15 @@
 </template>
 
 <template name="showpeople">
-  <!-- {{#if currentUser}} -->
-  <ul>
+  {{#if currentUser}}
+  <table>
   {{#each p in peoplelist}}
-    <li>{{> personrow person=p}}</li>
+    <tr><td>{{> personrow person=p}}</td></tr>
   {{/each}}
-  </ul>
-  <!-- {{else}}
+  </table>
+  {{else}}
   <h1>You must log in to see the info!!</h1>
-  {{/if}} -->
+  {{/if}}
 </template>
 
 <template name = "signuptext">
