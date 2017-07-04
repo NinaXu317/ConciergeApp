@@ -2,9 +2,9 @@
 
 Meteor.startup(() => {
   // code to run on server at startup
-  People.remove({});  // clear the database
-  People.insert({name:'Nina',location:"Waltham"});
-  People.insert({name:'Tim',location:"Boston"});
+  // People.remove({});  // clear the database
+  // People.insert({name:'Nina',location:"Waltham"});
+  // People.insert({name:'Tim',location:"Boston"});
 });
 //
 // Meteor.startup(function(){

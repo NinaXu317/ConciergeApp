@@ -15,8 +15,8 @@ a:link,a:visited
   display:block;
   width:120px;
   font-weight:bold;
-  color:#FFFFFF;
-  background-color:#bebebe;
+  color:#489FDF;
+  background-color:#489FDF;
   text-align:center;
   padding:4px;
   text-decoration:none;
@@ -25,5 +25,5 @@ a:link,a:visited
 }
 a:hover,a:active
 {
-background-color:#cc0000;
+background-color:#489FDF;
 }
