@@ -4,33 +4,42 @@
   <hr>
   {{> addperson}}
   {{> updatelocation}}
+
   {{> showpeople}}
-  {{> signuptext}}
+  <!-- {{> signuptext}} -->
 </template>
 
 <template name="addperson">
-  Name:<input type="text" id="name"><br>
-  Location:<input type="text" id="location"><br>
+  <h2> Share Your Location and Find Friends </h2>
+  Name:<input type="text" id="name">
+  Location:<input type="text" id="location">
+  Going to: <input type="text" id="event">
   <button id="addperson" class="btn btn-primary">
-    Add to Collection
+    Share
   </button>
 </template>
 
 <template name="updatelocation">
   <button id="updatelocation" class="btn btn-primary">
-    Update your Location
+    Update
   </button>
 </template>
 
 <template name="showpeople">
   {{#if currentUser}}
-  <table>
+  <table width="1000">
   {{#each p in peoplelist}}
-    <tr><td>{{> personrow person=p}}</td></tr>
+    <tr>
+      <th><strong>Name</strong></th>
+      <th><strong>Location</strong></th>
+      <th><strong>Goingto</strong></th>
+      <th><strong>Remove</strong></th>
+    </tr>
+    <tr>{{> personrow person=p}}</tr>
   {{/each}}
   </table>
   {{else}}
-  <h1>You must log in to see the info!!</h1>
+  <h1>Log in to see what others are doing</h1>
   {{/if}}
 </template>
 
@@ -74,6 +83,8 @@
 </template>
 
 <template name="personrow">
-  {{person.name}}--{{person.location}}
-  <button class="btn btn-danger btn-sm"> Delete</button>
+  <td>{{person.name}}</td>
+  <td>{{person.location}}</td>
+  <td>{{person.event}}</td>
+  <td><button class="btn btn-danger btn-sm"> Delete</button></td>
 </template>
